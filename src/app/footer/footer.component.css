@@ -1,0 +1,27 @@
+.container{
+    width: 100%;
+    text-align: center;   
+    background-color: #363536;
+    color: white;
+    margin: 0  auto;
+}
+
+
+
+ul{
+    margin: auto;
+    display: flex;
+    padding: 25px;
+    flex-wrap: wrap;
+}
+li{
+    list-style-type:none;
+    padding: 15px;
+    margin: 0 20px;
+}
+
+span{
+    border: 1px white solid;
+    margin: 0 2px;
+    padding: 2px;  
+}

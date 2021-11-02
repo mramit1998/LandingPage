@@ -1,0 +1,50 @@
+<div class="container">
+    <div class="search form-group">
+        <div class="search-bar">
+            <input type="text" (keyup)="filterElement($event.target.value)" placeholder="Search By Grade ,Subject or Video">
+        </div>
+        <div class="dropdown">
+            <select name="" id="">
+                <option></option>
+                <option value="caps">CAPS</option>
+                <option value="cie">CIE</option>
+                <option value="ieb">IEB</option>
+            </select>
+        </div>
+    </div>
+    <div class="main-content">
+        <div *ngIf="empty===false" class="recently-watced">
+            <h3>Recently Watched</h3>
+            <div class="wrapper">
+                <div class="card" *ngFor="let color of filteredMovies" [style.background-color]="color">
+                    <div>{{color}}</div>
+                </div>
+
+            </div>
+        </div>
+        <div *ngIf="empty===false" class="recently-watced">
+            <h3>Grade 10</h3>
+            <div class="wrapper">
+                <div class="card" *ngFor="let color of filteredMovies" [style.background-color]="color">
+                    <div>{{color}}</div>
+                </div>
+
+            </div>
+        </div>
+
+        <div *ngIf="empty===false" class="recently-watced">
+            <h3>Grade 11</h3>
+            <div class="wrapper">
+                <div class="card" *ngFor="let color of filteredMovies" [style.background-color]="color">
+                    <div>{{color}}</div>
+                </div>
+
+            </div>
+        </div>
+
+        <div  *ngIf ="empty ===true">
+            <h3>Nothing to display</h3>
+        </div>
+
+    </div>
+</div>
